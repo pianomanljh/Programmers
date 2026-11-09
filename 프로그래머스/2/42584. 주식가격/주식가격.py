@@ -10,8 +10,8 @@
 
 def solution(prices):
     answer = [i for i in range(len(prices)-1,-1, -1)]
-    st = [0]
-    for i in range(1,len(prices)):
+    st = []
+    for i in range(len(prices)):
         while st and prices[st[-1]] > prices[i]:
             p = st.pop()
             answer[p] = i-p
