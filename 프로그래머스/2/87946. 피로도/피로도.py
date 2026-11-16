@@ -1,6 +1,6 @@
 from itertools import permutations
 def solution(k, dungeons):
-    lst = list(permutations(dungeons, len(dungeons)))
+    lst = list(permutations(dungeons))
     result = 0
     for d in lst:
         count = 0
